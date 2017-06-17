@@ -21,3 +21,11 @@ UI:
 How to test:
 - https://medium.com/@fay_jai/getting-started-on-testing-with-typescript-reactjs-and-webpack-a45a72f4f603
 - https://www.toptal.com/react/how-react-components-make-ui-testing-easy
+
+CSS in JS?
+- https://github.com/MicheleBertoli/css-in-js
+- https://github.com/styled-components/styled-components
+- https://github.com/paypal/glamorous
+- https://github.com/zeit/styled-jsx
+- https://github.com/Khan/aphrodite
+- none of them - plain CSS
