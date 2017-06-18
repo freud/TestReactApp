@@ -42,60 +42,6 @@ export default class App extends React.Component<any, any> {
                     <h2>Create new template</h2>
                     <CreateTemplateForm defaultTemplateId="template ID" />
                 </div>
-
-                <table className="table table-sm table-hover">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>ID szablonu</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td scope="row">1</td>
-                        <td>ID szablonu</td>
-                        <td>
-                            <div className="btn-group" role="group">
-                                <button type="button" className="btn btn-sm btn-default">
-                                    <i className="fa fa-pencil" aria-hidden="true"></i> Edytuj
-                                </button>
-                                <button type="button" className="btn btn-sm btn-danger">
-                                    <i className="fa fa-trash" aria-hidden="true"></i> Usuń
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td scope="row">2</td>
-                        <td>ID szablonu</td>
-                        <td>
-                            <div className="btn-group" role="group">
-                                <button type="button" className="btn btn-sm btn-default">
-                                    <i className="fa fa-pencil" aria-hidden="true"></i> Edytuj
-                                </button>
-                                <button type="button" className="btn btn-sm btn-danger">
-                                    <i className="fa fa-trash" aria-hidden="true"></i> Usuń
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td scope="row">3</td>
-                        <td>ID szablonu</td>
-                        <td>
-                            <div className="btn-group" role="group">
-                                <button type="button" className="btn btn-sm btn-default">
-                                    <i className="fa fa-pencil" aria-hidden="true"></i> Edytuj
-                                </button>
-                                <button type="button" className="btn btn-sm btn-danger">
-                                    <i className="fa fa-trash" aria-hidden="true"></i> Usuń
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-                </table>
             </div>
         );
     }
