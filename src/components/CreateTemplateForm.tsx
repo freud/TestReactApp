@@ -1,36 +1,29 @@
 import * as React from 'react';
+import Input from 'react-toolbox/lib/input';
+import {Button} from 'react-toolbox/lib/button';
 
 export default class CreateTemplateForm extends React.Component<any, any> {
     constructor(props: any){
       super(props);
       
-      this.state = { templateId: this.props.defaultTemplateId };
+      this.state = { 
+        templateId: this.props.defaultTemplateId
+      };
     }
 
     handleSubmit(val: any) {
-      // Do anything you want with the form value
-      console.log(val);
       event.preventDefault();
     }
 
-    handleChange(event: any) {
-      this.setState({value: event.target.value});
+    handleChange (name:string, value:string) {
+      this.setState({...this.state, [name]: value});
     }
 
     public render() {
         return (
           <form onSubmit={this.handleSubmit}>
-            <div className="form-group row">
-              <label htmlFor="templateId" className="col-md-2 col-form-label">
-                Template ID
-              </label>
-              <div className="col-md-10">
-                <input type="templateId" className="form-control" 
-                       id="templateId" placeholder="Template ID" 
-                       value={this.state.templateId} onChange={this.handleChange} />
-              </div>
-            </div>
-            <input type="submit" value="Submit" className="btn btn-primary" />
+            <Input type="templateId" value={this.state.templateId} onChange={this.handleChange.bind(this, 'templateId')} />
+            <Button type="submit" icon='add' label='Dodaj' raised primary />
           </form>
         );
     }
