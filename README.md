@@ -29,3 +29,9 @@ CSS in JS?
 - https://github.com/zeit/styled-jsx
 - https://github.com/Khan/aphrodite
 - none of them - plain CSS
+
+Tslint ruleset:
+- https://github.com/Microsoft/tslint-microsoft-contrib/blob/master/recommended_ruleset.js
+
+Interesting starter project:
+- https://github.com/wmonk/create-react-app-typescript
